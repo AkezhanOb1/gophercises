@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Hello World</title>
+        </head>
+        <body>
+            {{if .}}
+                 <p>{{.Title}}</p>
+                {{range .Story}}
+                    <p>{{.}}</p>
+                {{end}}
+
+                {{if .Options}}
+                       {{range .Options}}
+                          <a href={{.Arc}}>{{.Text}}</a>
+                          <br />
+                       {{end}}
+                {{end}}
+            {{end}}
+        </body>
+    </html>
+
+
